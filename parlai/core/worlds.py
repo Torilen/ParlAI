@@ -1582,6 +1582,7 @@ def create_task_world(opt: Opt, user_agents, default_world=None):
 
     (A world factory.)
     """
+    print("create_task_world")
     task_agents = _create_task_agents(opt)
     world_class = load_world_module(
         opt['task'],
