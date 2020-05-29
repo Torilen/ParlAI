@@ -1615,7 +1615,7 @@ def create_task(opt: Opt, user_agents, default_world=None):
     # (e.g. "#QA" to the list of tasks that are QA tasks).
     opt = copy.deepcopy(opt)
     opt['task'] = ids_to_tasks(opt['task'])
-    print('[creating task(s): ' + opt['task'] + ']')
+    print('[creating task(s) lol : ' + opt['task'] + ']')
 
     # check if single or multithreaded, and single-example or batched examples
     if ',' not in opt['task']:
