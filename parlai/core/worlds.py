@@ -310,6 +310,7 @@ class DialogPartnerWorld(World):
         if not ((agents is not None) ^ (shared is not None)):
             raise ValueError('You must supply either agents or shared, but not both.')
         super().__init__(opt)
+        print("Create Dialog Partner World")
         if shared:
             # Create agents based on shared data.
             self.agents = create_agents_from_shared(shared['agents'])
@@ -431,6 +432,7 @@ class MultiAgentDialogWorld(World):
 
     def __init__(self, opt: Opt, agents, shared=None):
         super().__init__(opt)
+        print("Create Multi Agent Dialog World")
         if shared:
             # Create agents based on shared data.
             self.agents = create_agents_from_shared(shared['agents'])
