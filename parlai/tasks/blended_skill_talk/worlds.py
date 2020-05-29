@@ -40,6 +40,8 @@ def _load_personas(opt):
         for group in raw_safe_persona_groups:
             safe_group = [_standardize(string) for string in group.split('|')]
             safe_persona_strings.update(set(safe_group))
+
+    print(data)
     contexts = []
     for d in data:
         context1 = []
