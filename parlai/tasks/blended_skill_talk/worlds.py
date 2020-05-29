@@ -14,6 +14,7 @@ from parlai.tasks.self_chat.worlds import SelfChatWorld as SelfChatBaseWorld
 
 def get_contexts_data(opt, shared=None):
     if shared and 'contexts_data' in shared:
+        print("Don't load personas")
         return shared['contexts_data']
     return _load_personas(opt=opt)
 
