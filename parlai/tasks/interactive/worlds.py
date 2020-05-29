@@ -83,3 +83,6 @@ class InteractiveWorld(DialogPartnerWorld):
         if act['episode_done']:
             self.finalize_episode()
             self.turn_cnt = 0
+        print(self.p1)
+        print("=====")
+        print(self.p2)

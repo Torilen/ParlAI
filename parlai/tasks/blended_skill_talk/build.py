@@ -132,8 +132,6 @@ def _get_line(episode: dict, num_entries: int, entry_idx: int) -> str:
         # - Topic (from Wizard of Wikipedia)
         # - **Not** the situation (from EmpatheticDialogues)
         persona_pieces = [
-            f"it persona: {episode['personas'][0][0]}",
-            f"it persona: {episode['personas'][0][1]}",
             f"your persona: {episode['personas'][1][0]}",
             f"your persona: {episode['personas'][1][1]}",
         ]
