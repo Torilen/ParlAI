@@ -140,7 +140,11 @@ class InteractiveWorld(InteractiveBaseWorld):
 
     def get_contexts(self):
         random.seed()
-        p = [["My name is Bettana", "Im 20 years old"], ['', '']]
+        p = random.choice(self.contexts_data)
+        print(p)
+        print(type(p))
+        print(type(p[0]))
+        #p = [["My name is Bettana", "Im 20 years old"], ['', '']]
         return p[0], p[1]
 
     def finalize_episode(self):
