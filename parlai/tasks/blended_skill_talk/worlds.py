@@ -41,7 +41,7 @@ def _load_personas(opt):
             safe_group = [_standardize(string) for string in group.split('|')]
             safe_persona_strings.update(set(safe_group))
 
-    print(data)
+    #print(data)
     contexts = []
     for d in data:
         context1 = []
