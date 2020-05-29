@@ -130,6 +130,7 @@ class InteractiveWorld(InteractiveBaseWorld):
     def __init__(self, opt, agents, shared=None):
         super().__init__(opt, agents, shared)
         self.display_partner_persona = self.opt['display_partner_persona']
+        print("The Grafbot World was initialized !")
 
     def init_contexts(self, shared=None):
         self.contexts_data = get_contexts_data(self.opt, shared=shared)
